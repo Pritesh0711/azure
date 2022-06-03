@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menspage</title>
+    <style>
+        .container{
+            width: 80%;
+            height: auto;
+           
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,auto);
+            gap: 20px;
+        }
+        .container>div{
+           
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        /* img{
+            width: 60%;
+            height: auto;
+        } */
+        .container>div:first-child>img{
+            padding-left: 30%;
+            width: 30%;
+            height: auto;
+        }
+        .container>div:last-child>img{
+            padding-left: 30%;
+            width: 60%;
+        }
+        p+div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            margin-top: -30px;
+        }
+        p+div>h1+h2{
+            color: gray;
+        }
+        h2+h2{
+            color: rgb(49, 226, 123);
+        }
+        img+h2{
+            margin-bottom: -15px;
+        }
+        img+h3{
+            margin-bottom: -15px;
+        }
+        p{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://rukminim1.flixcart.com/image/800/960/l3929ow0/t-shirt/d/f/i/xl-pasrg03181187-mrn-pause-original-imageeqkeecsyfgg.jpeg?q=50" alt="">
+            <h3>Pause</h3>
+            <p>Mens Cotton Long Sleeves Shurg</p>
+            <div>
+                <h1>$359</h1>
+                <h2>$1,499</h2>
+                <h2>-76%</h2>
+            </div>
+        </div>
+        <div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPJUBINATION-SJERS295568BD3913AD/1562955990957_0..jpg?imwidth=320&impolicy=hq" alt="">
+           <h2> JUBINATION</h2>
+           <p>Men Wool Sleeves Sweater Pack Of 1</p>
+           <div>
+               <h1>$799</h1>
+               <h2>$1,499</h2>
+               <h2>-47%</h2>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
